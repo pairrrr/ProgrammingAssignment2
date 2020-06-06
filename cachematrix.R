@@ -1,3 +1,8 @@
+## A pair of functions to collect cache data on inverse of matrix
+## Prevent program from solving inverse multiple times
+
+## Functions to create vector to get cache for the matrix
+
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -12,6 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getInv = getInv)
 }
 
+## Function to solve for inverse when there is no inverse saved in cache
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
